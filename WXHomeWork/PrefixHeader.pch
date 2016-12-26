@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  WXHomeWork
+//
+//  Created by 王新 on 2016/12/20.
+//  Copyright © 2016年 王新. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "Header.h"
+
+#endif
+
+// 线程处理 程序块队列优先级
+#define DISPATCH_QUEUE_PRIORITY_HIGH     2
+#define DISPATCH_QUEUE_PRIORITY_DEFAULT  0
+#define DISPATCH_QUEUE_PRIORITY_LOW     (-2)
+
+// 请求网址
+#define HTTP @"http://thoughtworks-ios.herokuapp.com/facts.json"
+// 颜色
+#define CELL_TITLE_COLOR [UIColor blueColor]
+// 获取屏幕宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#endif /* PrefixHeader_pch */
